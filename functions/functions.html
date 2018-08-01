@@ -9,13 +9,24 @@
     <h1>isPalindrome Function</h1>
 
     <script>
-/* Checks if a character is a letter */
+    var name = prompt("write a word that is palindrome")
 function isLetter(char) {
     char = char.toLowerCase();
     return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 }
 
-// Write your isPalindrome function here!
+function ispalindrome (){
+	name = name.reverse();
+	return name
+
+}
+	name2 = ispalindrome()
+	if (name == name2){
+		document.write("True")
+}
+	else if (name !=name2) {
+		document.write("false")
+	}
 
     </script>
 </body>

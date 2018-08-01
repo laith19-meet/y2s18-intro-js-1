@@ -9,17 +9,30 @@
     <h1>Guessing Game</h1>
 
     <script>
-/* STARTING CODE */
+guess = 0 	
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * Math.floor(max - min)) + min;
 }
 
 var randomInt = getRandomInt(1, 100);
-/* END STARTING CODE */
 
-// your code goes under here
+	var game = prompt("guess a number bitween 1 and 100")
+		game = parseInt(game)
+	if (game > randomInt){
 
-    </script>
+		document.write("your guess was too high")
+	}
+		else if (game < randomInt){
+			document.write("you guessed too low")
+		}
+
+	else {
+		document.write("congratulations")
+	}
+	while (game != randomInt ){
+		game= prompt("guess a number bitween 1 and 100")
+	}
+
 </body>
 
 </html>
